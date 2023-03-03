@@ -5,24 +5,28 @@ main(){
        string nombres,apellidos,direccion,fecha_nacimiento;
        int telefono,dpi,cui;
        
-       cout<<"ingrese su dpi"<<endl;
+       /*cout<<"ingresar DPI"<<endl;
        cin>>dpi;
-       cout<<"ingrese su cui"<<endl;
-       cin>>cui;
-       cout<<"ingrese nombres"<<endl;
+       cout<<"ingresar CUI"<<endl;
+       cin>>cui;*/
+       cout<<"ingresar Nombres"<<endl;
        cin>>nombres;
-       cout<<"ingrese apellidos"<<endl;
+       cout<<"Ingresar Apellidos"<<endl;
        cin>>apellidos;
-       cout<<"ingrese su direccion"<<endl;
-       cin>>direccion
-       cout<<"ingrese fecha de nacimiento"<<endl;
+       cout<<"Ingresar su Direccion"<<endl;
+       cin>>direccion;
+       cout<<"Ingresar fecha de nacimiento"<<endl;
        cin>>fecha_nacimiento;
-       cout<<"ingrese su telefono"<<endl;
+       cout<<"Ingresar Telefono"<<endl;
        cin>>telefono;
+       cout<<"ingresar DPI"<<endl;
+       cin>>dpi;
+       cout<<"ingresar CUI"<<endl;
+       cin>>cui;
        
-       Propietario obj = Prpietario(nombres,apellidos,){
-       	
-	   }
-
+       Propietario obj = Propietario(nombres,apellidos,direccion,fecha_nacimiento,telefono,dpi , cui);
+       obj.mostrar();
+       
+	   system("pause");
 }
 

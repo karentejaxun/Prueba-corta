@@ -10,7 +10,7 @@ class Propietario : Persona {
 	   Propietario(){
 	   }
 	   
-	   Propietario(string nom,string ape,string dir,string fn,int tel,int dpi, int cui){
+	   Propietario(string nom,string ape,string dir,string fecna,int tel,int dpi, int cui) : Persona(nom,ape,dir,fecna,tel) {
 	   	 dpi = dpi;
 	   	 cui = cui;
 	   }
@@ -20,7 +20,7 @@ class Propietario : Persona {
 	   void setNOMBRES(string nom){nombres = nom;}
 	   void setAPELLIDOS(string ape){apellidos = ape;}
 	   void setDIRECCION(string dir){direccion = dir;}
-	   void setFECHA_NACIMIENTO(string fn){fecha_nacimiento = fn;}
+	   void setFECHA_NACIMIENTO(string fecna){fecha_nacimiento = fecna;}
 	   void setTELEFONO(int tel){telefono = tel;}
 	   
 	   int getDPI(){return dpi;}
@@ -32,7 +32,20 @@ class Propietario : Persona {
 	   int getTelefono(){return telefono;}
 	   
 	  void mostrar(){
-	  	cout<<"__________"<<endl;
-	  	cout<<dpi<<","<<nombres<<","<<apellidos<<","<<direccion<<","<<fecha_nacimiento<<","<<telefono<<endl;
+	        
+	        cout<<"_____________"<<endl;
+	        cout<<nombres<<","<<apellidos<<","<<direccion<<","<<fecha_nacimiento<<","<<telefono<<","<<dpi<<","<<cui<<endl;
+		
 	  } 
+	  
+	
+	void agregar(){
+		cout<<"Metodo Agregar"<<endl;
+	}
+	
+	/*
+	void mostrar(){
+		cout<<"Metodo Mostrar"<<endl;
+	}*/
+	  
 };
